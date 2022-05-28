@@ -109,9 +109,9 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton(
-        "Repo", "https://www.github.com/yashoswalyo/clone-bot-public"
+        "Repo", "https://t.me/+21-626z8Zko3YWU1"
     )
-    buttons.buildbutton("Report Group", "https://t.me/itzTgDiscussGroup")
+    buttons.buildbutton("Owner", "https://t.me/zkp143")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f"""
@@ -197,7 +197,7 @@ help_string_telegraph = f"""<br>
 """
 
 help = telegraph.create_page(
-    title="Mirror-Leech-Bot Help",
+    title="MM-Mirror-Leech-Bot Help",
     content=help_string_telegraph,
 )["path"]
 
